@@ -1,0 +1,312 @@
+/*
+Theme Name: 	Betheme Child
+Theme URI: 		http://themes.muffingroup.com/betheme
+Author: 		Muffin group
+Author URI: 	http://muffingroup.com
+Description:	Child Theme for Betheme - Premium WordPress Theme
+Template:		betheme
+Version: 		1.6
+*/
+/* Theme customization starts here
+-------------------------------------------------------------- */
+
+/*==========================
+
+VARIABLES
+
+==========================*/
+
+/*--- PRIMARY COLORS ---*/
+
+$basic-white: #ffffff;
+$basic-white-transparent: rgba(255, 255, 255, 0.76);
+$anti-flash-white: #f2f2f2;
+$anti-flash-transparent: rgba(237, 237, 237, 0.76);
+$gunmetal: #292f36;
+$dark-emperial-blue: #003d76;
+$dark-emperial-blue-box-shadow: 0 2px 5px 0 rgba(0,61,118,0.3);
+
+$main-font: "Raleway", Arial, Tahoma, sans-serif;
+
+/*=============================
+
+HEADER EDITS
+
+=============================*/
+
+/*--- LOGO EDITS ---*/
+
+#Top_bar{
+
+  /*NORMAL LOGO STATE*/
+
+  .logo{
+    margin: 0 0 0 20px;
+    padding-right: 12px;
+    border-right: 2px solid #e3e3e3;
+  }
+
+  #logo{
+    padding: 11px 0;
+    padding-bottom: 24px;
+    height: 43px !important;
+   }
+
+  .logo.dmc-logo{
+    margin: 0 20px 0 10px !important;
+    border-right: none;
+  }
+
+}
+
+/*STICKY LOGO STATE*/
+
+header#Header #Top_bar.is-sticky{
+
+  .logo{ margin: 0 8px 0 20px; }
+
+  #logo{ padding-right: 19px !important;}
+
+}
+
+/*--- TOP BAR EDITS ---*/
+
+section#wfc-nav-top-bar{
+  height: 50px;
+  background: $gunmetal;
+
+   .section_wrapper.mcb-section-inner,
+   .textwidget,
+   .column.mcb-column.one-second.column_column.column-margin-.wfc-social-links,
+   .column.mcb-column.one-second.column_column.column-margin-.wfc-social-links .column_attr.clearfix{
+     height: 50px;
+  }
+
+  #text-5.widget.widget_text{ padding-left: 32px; }
+
+  .textwidget,
+  .textwidget a{
+    font-size: 18px;
+    font-family: $main-font;
+    color: $anti-flash-white;
+    padding-top: 12px;
+  }
+
+  .custom-menu-class{
+    float: right;
+    height: 50px;
+
+    #menu-wfc_social_menu{
+      float: left;
+      height: 50px;
+      margin: 0;
+    }
+
+    li{
+      height: 50px;
+
+      a{
+        margin-top: -6px;
+        margin-right: 7px;
+        height: 50px;
+        padding: 0;
+        font-size: 22px;
+      }
+
+     }
+
+  }
+
+}
+
+/*--- MAIN NAVIGATION ---*/
+
+.header-transparent #Top_bar:not(.is-sticky) {
+  background: $basic-white;
+
+  nav#menu li a{
+    color: $dark-emperial-blue;
+    text-transform: uppercase;
+  }
+
+}
+
+/*--- STICKY MENU ---*/
+
+#Top_bar.is-sticky{
+
+  background-color: $basic-white-transparent !important;
+  height: 138px !important;
+  box-shadow: $dark-emperial-blue-box-shadow !important;
+
+  section#wfc-nav-top-bar .custom-menu-class li a{
+    margin-top: 9px;
+  }
+
+  nav#menu{
+
+    ul li a{
+      color: $dark-emperial-blue;
+      text-transform: uppercase;
+    }
+
+  }
+
+  ul.mfn-megamenu,
+  ul.sub-menu{
+    margin-top: 16px;
+  }
+
+}
+
+/*--- MEGA MENU & DROP DOWNS ---*/
+
+#Top_bar nav.menu-main_menu-container {
+
+  ul.mfn-megamenu{
+    border-top: 2px solid $dark-emperial-blue;
+    background: $basic-white;
+
+    a.mfn-megamenu-title{
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+  }
+
+  /*DROP DOWNS*/
+
+  ul.sub-menu{
+    background: $basic-white;
+    border-top: 2px solid $dark-emperial-blue;
+  }
+
+}
+
+/*=======================
+
+BODY & CONTENT
+
+=======================*/
+
+#Wrapper, #Content{
+  background-color: $basic-white !important;
+
+  .fancy_heading .title,
+  h1, h1 a, h1 a:hover,
+  h2, h2 a, h2 a:hover,
+  h3, h3 a, h3 a:hover{
+    color: #023e75;
+  }
+
+}
+
+#wfc-user-driven-nav{
+
+  .one-third.column{
+    margin: 0 0 12px 3px;
+    width: 32.9%;
+  }
+
+}
+
+#wfc-manufacturing-advantage{
+
+  .zoom_box:hover .desc,
+  .zoom_box:hover .photo img{
+    transform: none;
+  }
+
+  .zoom_box .desc .desc_txt{
+    padding: 58px 40px;
+    font-size: 16px;
+    text-align: left;
+    color: $gunmetal;
+  }
+
+}
+
+.column.mcb-column.one.column_blog_news.wfc-homepage-news{
+
+  h5{
+    font-size: 26px;
+    font-weight: 500;
+    padding-bottom: 25px;
+  }
+
+  .button.button_js.kill_the_icon{
+    float: right;
+    background-color: $dark-emperial-blue;
+    color: $anti-flash-white;
+  }
+
+}
+
+#wfc-dmc-cta{
+
+  display: none;
+
+  .wfc-cta-text{
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+}
+
+.home.page #wfc-dmc-cta.hide-on-homepage{ display: none; }
+
+/*PRODUCT DETAIL PAGES*/
+
+.single.single-portfolio{
+
+  #Subheader{
+    padding: 210px 0 40px !important;
+
+    .title{
+      /*font-size: 39px;*/
+      display: none;
+    }
+
+  }
+
+  .post-meta.clearfix,
+  .project-description,
+  .single-photo-wrapper.image{
+    display: none;
+  }
+
+}
+
+/*=======================
+
+FOOTER UNIVERSAL CTA
+
+========================*/
+
+#wfc-universal-cta{
+
+  .column.mcb-column.two-third.column_column.column-margin-{ margin: 0 1% auto; }
+
+  h2{
+    color: $anti-flash-white;
+    margin-top: 15px;
+  }
+
+  .button_align.align_center{ margin-top: 35px; }
+
+}
+
+/*========================
+
+FOOTER
+
+=========================*/
+
+#Footer{
+
+  .widget_nav_menu ul li a{
+      font-size: 15px;
+  }
+
+}

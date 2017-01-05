@@ -1,0 +1,191 @@
+/*
+Theme Name: 	Betheme Child
+Theme URI: 		http://themes.muffingroup.com/betheme
+Author: 		Muffin group
+Author URI: 	http://muffingroup.com
+Description:	Child Theme for Betheme - Premium WordPress Theme
+Template:		betheme
+Version: 		1.6
+*/
+/* Theme customization starts here
+-------------------------------------------------------------- */
+/*==========================
+
+VARIABLES
+
+==========================*/
+/*--- PRIMARY COLORS ---*/
+/*=============================
+
+HEADER EDITS
+
+=============================*/
+/*--- LOGO EDITS ---*/
+#Top_bar {
+  /*NORMAL LOGO STATE*/ }
+  #Top_bar .logo {
+    margin: 0 0 0 20px;
+    padding-right: 12px;
+    border-right: 2px solid #e3e3e3; }
+  #Top_bar #logo {
+    padding: 11px 0;
+    padding-bottom: 24px;
+    height: 43px !important; }
+  #Top_bar .logo.dmc-logo {
+    margin: 0 20px 0 10px !important;
+    border-right: none; }
+
+/*STICKY LOGO STATE*/
+header#Header #Top_bar.is-sticky .logo {
+  margin: 0 8px 0 20px; }
+header#Header #Top_bar.is-sticky #logo {
+  padding-right: 19px !important; }
+
+/*--- TOP BAR EDITS ---*/
+section#wfc-nav-top-bar {
+  height: 50px;
+  background: #292f36; }
+  section#wfc-nav-top-bar .section_wrapper.mcb-section-inner,
+  section#wfc-nav-top-bar .textwidget,
+  section#wfc-nav-top-bar .column.mcb-column.one-second.column_column.column-margin-.wfc-social-links,
+  section#wfc-nav-top-bar .column.mcb-column.one-second.column_column.column-margin-.wfc-social-links .column_attr.clearfix {
+    height: 50px; }
+  section#wfc-nav-top-bar #text-5.widget.widget_text {
+    padding-left: 32px; }
+  section#wfc-nav-top-bar .textwidget,
+  section#wfc-nav-top-bar .textwidget a {
+    font-size: 18px;
+    font-family: "Raleway", Arial, Tahoma, sans-serif;
+    color: #f2f2f2;
+    padding-top: 12px; }
+  section#wfc-nav-top-bar .custom-menu-class {
+    float: right;
+    height: 50px; }
+    section#wfc-nav-top-bar .custom-menu-class #menu-wfc_social_menu {
+      float: left;
+      height: 50px;
+      margin: 0; }
+    section#wfc-nav-top-bar .custom-menu-class li {
+      height: 50px; }
+      section#wfc-nav-top-bar .custom-menu-class li a {
+        margin-top: -6px;
+        margin-right: 7px;
+        height: 50px;
+        padding: 0;
+        font-size: 22px; }
+
+/*--- MAIN NAVIGATION ---*/
+.header-transparent #Top_bar:not(.is-sticky) {
+  background: #ffffff; }
+  .header-transparent #Top_bar:not(.is-sticky) nav#menu li a {
+    color: #003d76;
+    text-transform: uppercase; }
+
+/*--- STICKY MENU ---*/
+#Top_bar.is-sticky {
+  background-color: rgba(255, 255, 255, 0.76) !important;
+  height: 138px !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 61, 118, 0.3) !important; }
+  #Top_bar.is-sticky section#wfc-nav-top-bar .custom-menu-class li a {
+    margin-top: 9px; }
+  #Top_bar.is-sticky nav#menu ul li a {
+    color: #003d76;
+    text-transform: uppercase; }
+  #Top_bar.is-sticky ul.mfn-megamenu,
+  #Top_bar.is-sticky ul.sub-menu {
+    margin-top: 16px; }
+
+/*--- MEGA MENU & DROP DOWNS ---*/
+#Top_bar nav.menu-main_menu-container {
+  /*DROP DOWNS*/ }
+  #Top_bar nav.menu-main_menu-container ul.mfn-megamenu {
+    border-top: 2px solid #003d76;
+    background: #ffffff; }
+    #Top_bar nav.menu-main_menu-container ul.mfn-megamenu a.mfn-megamenu-title {
+      font-size: 14px;
+      font-weight: 900; }
+  #Top_bar nav.menu-main_menu-container ul.sub-menu {
+    background: #ffffff;
+    border-top: 2px solid #003d76; }
+
+/*=======================
+
+BODY & CONTENT
+
+=======================*/
+#Wrapper, #Content {
+  background-color: #ffffff !important; }
+  #Wrapper .fancy_heading .title,
+  #Wrapper h1, #Wrapper h1 a, #Wrapper h1 a:hover,
+  #Wrapper h2, #Wrapper h2 a, #Wrapper h2 a:hover,
+  #Wrapper h3, #Wrapper h3 a, #Wrapper h3 a:hover, #Content .fancy_heading .title,
+  #Content h1, #Content h1 a, #Content h1 a:hover,
+  #Content h2, #Content h2 a, #Content h2 a:hover,
+  #Content h3, #Content h3 a, #Content h3 a:hover {
+    color: #023e75; }
+
+#wfc-user-driven-nav .one-third.column {
+  margin: 0 0 12px 3px;
+  width: 32.9%; }
+
+#wfc-manufacturing-advantage .zoom_box:hover .desc,
+#wfc-manufacturing-advantage .zoom_box:hover .photo img {
+  transform: none; }
+#wfc-manufacturing-advantage .zoom_box .desc .desc_txt {
+  padding: 58px 40px;
+  font-size: 16px;
+  text-align: left;
+  color: #292f36; }
+
+.column.mcb-column.one.column_blog_news.wfc-homepage-news h5 {
+  font-size: 26px;
+  font-weight: 500;
+  padding-bottom: 25px; }
+.column.mcb-column.one.column_blog_news.wfc-homepage-news .button.button_js.kill_the_icon {
+  float: right;
+  background-color: #003d76;
+  color: #f2f2f2; }
+
+#wfc-dmc-cta {
+  display: none; }
+  #wfc-dmc-cta .wfc-cta-text {
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px; }
+
+.home.page #wfc-dmc-cta.hide-on-homepage {
+  display: none; }
+
+/*PRODUCT DETAIL PAGES*/
+.single.single-portfolio #Subheader {
+  padding: 210px 0 40px !important; }
+  .single.single-portfolio #Subheader .title {
+    /*font-size: 39px;*/
+    display: none; }
+.single.single-portfolio .post-meta.clearfix,
+.single.single-portfolio .project-description,
+.single.single-portfolio .single-photo-wrapper.image {
+  display: none; }
+
+/*=======================
+
+FOOTER UNIVERSAL CTA
+
+========================*/
+#wfc-universal-cta .column.mcb-column.two-third.column_column.column-margin- {
+  margin: 0 1% auto; }
+#wfc-universal-cta h2 {
+  color: #f2f2f2;
+  margin-top: 15px; }
+#wfc-universal-cta .button_align.align_center {
+  margin-top: 35px; }
+
+/*========================
+
+FOOTER
+
+=========================*/
+#Footer .widget_nav_menu ul li a {
+  font-size: 15px; }
+
+/*# sourceMappingURL=style.css.map */
